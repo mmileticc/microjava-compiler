@@ -1,0 +1,50 @@
+program TestProjekat
+    // Test deklaracije enuma
+    enum Status { AKTIVAN, PAUZIRAN, ZAVRSEN=10 }
+    
+    // Test konstanti i nizova
+    const int velicina = 5;
+    int niz[];
+    char tacka;
+{
+    // Test funkcije sa parametrima i povratnom vrednošću
+    int izracunaj(int koeficijent, int bonus) 
+        int privremena;
+    {
+        privremena = koeficijent * 2;
+        return privremena + bonus;
+    }
+
+    void main() 
+        int x, y;
+        Status trenutniStatus;
+        bool uspeh;
+    {
+        // 1. Test dodele i Enuma (provera isInt helpera)
+        trenutniStatus = Status.AKTIVAN;
+        x = Status.ZAVRSEN; // Ovo tvoj kod dozvoljava (enum -> int)
+        
+        // 2. Test alokacije niza i .length (Designator stek test)
+        niz = new int[velicina];
+        x = niz.length;
+        
+        // 3. Test kompleksnog Designatora (niz[niz[0]])
+        // Ovde se stek puni: [niz] -> [niz, niz] -> [niz, elem] -> [elem]
+        niz[0] = 1;
+        niz[niz[0]] = 100;
+        
+        // 4. Test ternarnog operatora
+        uspeh = true;
+        y = (uspeh) ? izracunaj(x, 2) : 0;
+        
+        // 5. Test petlje i break/continue (loopDepth test)
+        for (x = 0; x < niz.length; x++) {
+            if (x == 2) continue;
+            if (niz[x] > 50) break;
+            print(niz[x]);
+        }
+        
+        // 6. Test ugnježdenog poziva funkcije unutar print-a
+        print(izracunaj(Status.PAUZIRAN, niz[0]));
+    }
+}

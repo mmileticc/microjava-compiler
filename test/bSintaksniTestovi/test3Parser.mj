@@ -1,0 +1,35 @@
+//testiranje Abstract Class
+program MJProgram 
+
+abstract class Apstraktna{
+	int arg1, arg2[];
+	{
+		abstract int meth();
+		
+		
+	}
+}
+{
+	int main()
+	int x, y;
+	{
+		break;
+		continue;
+		return;
+		return 5;
+		x = x.temp[y+6].z+5*7-9/4;
+		h = x<=y ? u : h;
+		if(x < y){
+			x = y;
+		}
+		else{
+			y = x*x*x+y;
+		}
+		for(x = 9; x< 30; x++)
+		{
+			print(x, 6);
+		}
+		
+	}
+
+}

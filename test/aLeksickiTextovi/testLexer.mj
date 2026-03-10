@@ -1,0 +1,36 @@
+program MJProgram
+	int x, y, z, y, u bb;
+{
+	program
+	break
+	enum
+	class
+	abstract
+	else
+	const
+	if
+	new
+	print
+	read
+	return
+	void
+	extends
+	continue
+	for
+	length
+	switch
+	case
+	
+	+ - * / % == != > >= < <= && || = ++ -- ; : . ( ) [ ] , { }
+	|
+	char karakter = 'c';
+	int broj = 69;
+	
+	?
+	void main() {
+		int a;
+		char bbb;
+	}
+	true false
+	
+}

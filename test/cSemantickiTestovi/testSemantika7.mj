@@ -1,0 +1,71 @@
+program TestB
+    enum Boja { CRVENA, PLAVA, ZELENA }
+    enum Status { OK, ERROR }
+
+    const int MAX = 10;
+    int niz[];
+    Boja trenutnaBoja;
+
+    {
+        int izracunaj(int koef, Status s) 
+            int lokalni;
+        {
+            if (s == Status.OK) {
+                return koef * 2;
+            } else {
+                return -1;
+            }
+        }
+
+        void main() 
+            int i, x;
+            Status s;
+            bool uslov;
+        {
+            // 1. Testiranje nizova i konstanti
+            niz = new int[MAX];
+            i = 0;
+            for (; i < niz.length; i++) {
+                niz[i] = i * 2;
+            }
+
+            // 2. Testiranje enuma i switch-a
+            trenutnaBoja = Boja.PLAVA;
+            s = Status.OK;
+
+            switch (trenutnaBoja) {
+                case 0: 
+                    print('C'); 
+                    break;
+                case 1: 
+                    print('P');
+                    // switch unutar switch-a (test switchConstantsStack)
+                    switch(i) {
+                        case 10: print(1); break;
+                        case 20: print(2); break;
+                    }
+                    break;
+                case 2: 
+                    print('Z'); 
+                    break;
+            }
+
+            // 3. Testiranje logičkih izraza i ternarnog operatora
+            uslov = true;
+            x = (uslov && (i == 10)) ? izracunaj(5, s) : 0;
+            
+            print(x);
+
+            // 4. Testiranje semantičkih restrikcija (ovde bi kompajler trebalo da ćuti)
+            if (niz != null) { // Dozvoljeno poređenje niza sa null (== ili !=)
+                print(niz[0]);
+            }
+
+            // 5. Testiranje petlje i break/continue
+            for (i = 0; i < 5; i++) {
+                if (i == 2) continue;
+                if (i == 4) break;
+                print(i);
+            }
+        }
+    }

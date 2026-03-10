@@ -1,0 +1,42 @@
+program TestProjekat
+    // Test deklaracije enuma
+    enum Status { AKTIVAN, PAUZIRAN, ZAVRSEN=10 }
+    
+    // Test konstanti i nizova
+    const int velicina = 5;
+    int niz[];
+    char tacka;
+{
+    // Test funkcije sa parametrima i povratnom vrednošću
+    int izracunaj(int koeficijent, int bonus) 
+        int privremena;
+    {
+        privremena = koeficijent * 2;
+        return privremena + bonus;
+    }
+
+    void main() 
+        int x, y;
+        Status trenutniStatus;
+        bool uspeh;
+    {
+        // 1. Greška: break van petlje
+		break; 
+		
+		// 2. Greška: Neispravni tipovi u ternarnom (int i char nisu kompatibilni)
+		x = (true) ? 5 : 'a'; 
+		
+		// 3. Greška: Poziv funkcije sa pogrešnim brojem argumenata
+		x = izracunaj(5); 
+		
+		// 4. Greška: .length na nečemu što nije niz
+		x = tacka.length; 
+		
+		// 5. Greška: Dodela konstanti
+		Status.AKTIVAN = 10;
+        }
+        
+        // 6. Test ugnježdenog poziva funkcije unutar print-a
+        print(izracunaj(Status.PAUZIRAN, niz[0]));
+    }
+}

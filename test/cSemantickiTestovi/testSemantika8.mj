@@ -1,0 +1,13 @@
+program TestArrays
+    int a[], b[];
+{
+    void main() {
+        a = new int[2];
+        b = new int[2];
+        if (a == b) print('1'); // OK
+        if (a != null) print('2'); // OK
+        
+        // GRESKA: Ne sme > nad nizovima!
+        if (a > b) print('3'); 
+    }
+}

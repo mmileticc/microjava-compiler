@@ -1,0 +1,61 @@
+// Test301
+
+program test301
+
+enum Broj { NULA, JEDAN, PET=5, DESET=10}
+
+const int nula = 0;
+const int jedan = 1;
+const int pet = 5;
+
+int niz[];
+char nizch[];
+
+int a;
+	
+{
+	int sum(int z, int d)
+	{
+		return z + d;
+	}
+
+	void main()	
+		int bodovi;
+		int temp;
+		Broj nula, jedan;
+		bool bt;
+		int i, j, n, m;
+	{
+		
+		
+		print(false ? bodovi + 20 : bodovi + 30);
+		print(eol);
+		
+		print(bodovi > 10 ? bodovi > 15 && bodovi < 20 ? '/': '+'  : '-');
+		print(eol);
+
+		if(bodovi + 5 < 0){
+			print(1);
+		}else{
+			print(0);
+		} 
+		
+		print(sum(5,8)); print(eol);
+		
+		print('n');print(':');print(eol);
+		read(n);
+		print('m');print(':');print(eol);
+		read(m);
+		
+		for(i = 0; i < n; i++){
+			for(j = 0; j < m; j++){
+				print(i);
+				print(j);
+				print(eol);
+			}
+		}
+		
+	}
+}
+
+

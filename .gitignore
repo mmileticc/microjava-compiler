@@ -1,0 +1,16 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Build output
+bin/
+build/
+target/
+*.class
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+*.swp

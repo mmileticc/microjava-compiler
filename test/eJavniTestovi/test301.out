@@ -1,0 +1,277 @@
+Buildfile: C:\Users\Miletic\Desktop\PP\pp1ProjekatWorkspace\workspace\MJCompilerMoj\build.xml
+disasm:
+     [java] codeSize=463
+     [java] dataSize=3
+     [java] mainPC=0
+     [java] 0: enter 0 5
+     [java] 3: const_0
+     [java] 4: store_2
+     [java] 5: const_1
+     [java] 6: store_3
+     [java] 7: const_0
+     [java] 8: store_0
+     [java] 9: load_0
+     [java] 10: const_1
+     [java] 11: add
+     [java] 12: store_0
+     [java] 13: load_0
+     [java] 14: load_3
+     [java] 15: add
+     [java] 16: store_0
+     [java] 17: load_0
+     [java] 18: const_5
+     [java] 19: mul
+     [java] 20: store_0
+     [java] 21: load_0
+     [java] 22: const_1
+     [java] 23: sub
+     [java] 24: store_0
+     [java] 25: load_0
+     [java] 26: const_3
+     [java] 27: print
+     [java] 28: const 10
+     [java] 33: const_1
+     [java] 34: bprint
+     [java] 35: getstatic 0
+     [java] 38: const_3
+     [java] 39: newarray 1
+     [java] 41: putstatic 0
+     [java] 44: getstatic 0
+     [java] 47: load_2
+     [java] 48: const_2
+     [java] 49: astore
+     [java] 50: getstatic 0
+     [java] 53: load_3
+     [java] 54: const_3
+     [java] 55: astore
+     [java] 56: getstatic 0
+     [java] 59: getstatic 0
+     [java] 62: load_2
+     [java] 63: aload
+     [java] 64: getstatic 0
+     [java] 67: const_1
+     [java] 68: aload
+     [java] 69: const_4
+     [java] 70: mul
+     [java] 71: astore
+     [java] 72: getstatic 0
+     [java] 75: const_2
+     [java] 76: aload
+     [java] 77: getstatic 0
+     [java] 80: const_0
+     [java] 81: aload
+     [java] 82: div
+     [java] 83: store_0
+     [java] 84: load_0
+     [java] 85: const_3
+     [java] 86: print
+     [java] 87: const 10
+     [java] 92: const_1
+     [java] 93: bprint
+     [java] 94: getstatic 0
+     [java] 97: const_2
+     [java] 98: aload
+     [java] 99: const_3
+     [java] 100: print
+     [java] 101: const 10
+     [java] 106: const_1
+     [java] 107: bprint
+     [java] 108: getstatic 1
+     [java] 111: const_3
+     [java] 112: newarray 0
+     [java] 114: putstatic 1
+     [java] 117: getstatic 1
+     [java] 120: const_0
+     [java] 121: const 97
+     [java] 126: bastore
+     [java] 127: getstatic 1
+     [java] 130: load_3
+     [java] 131: const 98
+     [java] 136: bastore
+     [java] 137: getstatic 1
+     [java] 140: const_5
+     [java] 141: const_3
+     [java] 142: sub
+     [java] 143: const 99
+     [java] 148: bastore
+     [java] 149: getstatic 1
+     [java] 152: const_1
+     [java] 153: baload
+     [java] 154: const_1
+     [java] 155: bprint
+     [java] 156: const 10
+     [java] 161: const_1
+     [java] 162: bprint
+     [java] 163: getstatic 1
+     [java] 166: load_3
+     [java] 167: const_2
+     [java] 168: mul
+     [java] 169: baload
+     [java] 170: const_1
+     [java] 171: bprint
+     [java] 172: const 10
+     [java] 177: const_1
+     [java] 178: bprint
+     [java] 179: getstatic 1
+     [java] 182: const_0
+     [java] 183: baload
+     [java] 184: const_3
+     [java] 185: print
+     [java] 186: getstatic 1
+     [java] 189: arraylength
+     [java] 190: const_3
+     [java] 191: print
+     [java] 192: getstatic 0
+     [java] 195: arraylength
+     [java] 196: const_3
+     [java] 197: print
+     [java] 198: const_2
+     [java] 199: putstatic 2
+     [java] 202: const 10
+     [java] 207: const_1
+     [java] 208: bprint
+     [java] 209: read
+     [java] 210: store_0
+     [java] 211: const 10
+     [java] 216: const_1
+     [java] 217: bprint
+     [java] 218: load_0
+     [java] 219: neg
+     [java] 220: const_5
+     [java] 221: getstatic 2
+     [java] 224: mul
+     [java] 225: const_2
+     [java] 226: div
+     [java] 227: load_2
+     [java] 228: sub
+     [java] 229: load_0
+     [java] 230: mul
+     [java] 231: add
+     [java] 232: const_3
+     [java] 233: const_2
+     [java] 234: rem
+     [java] 235: const_3
+     [java] 236: const_2
+     [java] 237: mul
+     [java] 238: add
+     [java] 239: const 7
+     [java] 244: sub
+     [java] 245: sub
+     [java] 246: store_0
+     [java] 247: load_0
+     [java] 248: const_3
+     [java] 249: print
+     [java] 250: const 10
+     [java] 255: const_1
+     [java] 256: bprint
+     [java] 257: read
+     [java] 258: store_0
+     [java] 259: const 10
+     [java] 264: const_1
+     [java] 265: bprint
+     [java] 266: const_0
+     [java] 267: store 4
+     [java] 269: load 4
+     [java] 271: const_0
+     [java] 272: jeq 7 (=279)
+     [java] 275: load_0
+     [java] 276: jmp 10 (=286)
+     [java] 279: load_0
+     [java] 280: const 10
+     [java] 285: add
+     [java] 286: const_3
+     [java] 287: print
+     [java] 288: const 10
+     [java] 293: const_1
+     [java] 294: bprint
+     [java] 295: const_0
+     [java] 296: const_0
+     [java] 297: jeq 13 (=310)
+     [java] 300: load_0
+     [java] 301: const 20
+     [java] 306: add
+     [java] 307: jmp 10 (=317)
+     [java] 310: load_0
+     [java] 311: const 30
+     [java] 316: add
+     [java] 317: const_3
+     [java] 318: print
+     [java] 319: const 10
+     [java] 324: const_1
+     [java] 325: bprint
+     [java] 326: load_0
+     [java] 327: const 10
+     [java] 332: jle 7 (=339)
+     [java] 335: const_1
+     [java] 336: jmp 4 (=340)
+     [java] 339: const_0
+     [java] 340: const_0
+     [java] 341: jeq 57 (=398)
+     [java] 344: load_0
+     [java] 345: const 15
+     [java] 350: jle 7 (=357)
+     [java] 353: const_1
+     [java] 354: jmp 4 (=358)
+     [java] 357: const_0
+     [java] 358: dup
+     [java] 359: const_0
+     [java] 360: jeq 18 (=378)
+     [java] 363: pop
+     [java] 364: load_0
+     [java] 365: const 20
+     [java] 370: jge 7 (=377)
+     [java] 373: const_1
+     [java] 374: jmp 4 (=378)
+     [java] 377: const_0
+     [java] 378: const_0
+     [java] 379: jeq 11 (=390)
+     [java] 382: const 47
+     [java] 387: jmp 8 (=395)
+     [java] 390: const 43
+     [java] 395: jmp 8 (=403)
+     [java] 398: const 45
+     [java] 403: const_1
+     [java] 404: bprint
+     [java] 405: const 10
+     [java] 410: const_1
+     [java] 411: bprint
+     [java] 412: load_0
+     [java] 413: const_5
+     [java] 414: jle 7 (=421)
+     [java] 417: const_1
+     [java] 418: jmp 4 (=422)
+     [java] 421: const_0
+     [java] 422: dup
+     [java] 423: const_0
+     [java] 424: jeq 18 (=442)
+     [java] 427: pop
+     [java] 428: load_0
+     [java] 429: const 10
+     [java] 434: jge 7 (=441)
+     [java] 437: const_1
+     [java] 438: jmp 4 (=442)
+     [java] 441: const_0
+     [java] 442: const_0
+     [java] 443: jeq 11 (=454)
+     [java] 446: const 10
+     [java] 451: jmp 8 (=459)
+     [java] 454: const 99
+     [java] 459: const_3
+     [java] 460: print
+     [java] 461: exit
+     [java] 462: return
+runObj:
+     [java]   9
+     [java]   6
+     [java]  12
+     [java] b
+     [java] c
+     [java]  97  3  3
+     [java]  12
+     [java]  14
+     [java]  34
+     [java] -
+     [java]  99
+     [java] Completion took 20 ms
+BUILD SUCCESSFUL
+Total time: 427 milliseconds

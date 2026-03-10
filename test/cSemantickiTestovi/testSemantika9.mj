@@ -1,0 +1,67 @@
+program NapredniTest
+    enum Val { PRVI, DRUGI, TRECI }
+    const int NULA = 0;
+    int niz1[], niz2[];
+    char karakteri[];
+
+    {
+        // Funkcija koja prima niz i enum, vraca int
+        int provera(int n[], Val v) int i; {
+            for (i = 0; i < n.length; i++) {
+                if (i == 1 && v == Val.DRUGI) return 100;
+            }
+            return NULA;
+        }
+
+        void main() 
+            Val v1;
+            int x;
+            bool uspeh;
+        {
+            niz1 = new int[5];
+            niz2 = new int[5];
+            karakteri = new char[3];
+            
+            v1 = Val.PRVI;
+            x = 10;
+
+            // 1. Testiranje ugnježdenih struktura i break-a
+            for (x = 0; x < 3; x++) {
+                switch (x) {
+                    case 0:
+                        // Switch unutar case-a (test steka)
+                        switch (v1) {
+                            case 0: print('A'); break; // Ovaj break izlazi iz UNUTRAŠNJEG switcha
+                            case 1: print('B'); break;
+                        }
+                        break; // Ovaj break izlazi iz SPOLJAŠNJEG switcha
+                    case 1:
+                        // Continue unutar switcha se odnosi na FOR petlju
+                        if (x == 1) continue; 
+                        break;
+                }
+            }
+            
+            //greska dupirana grana
+            switch (v1) {
+			    case 0: print('A'); break;
+			    case 0: print('X'); break; // DODAJ OVO
+			}
+
+            // 2. Testiranje ternarnog operatora sa pozivom funkcije
+            // Uslov mora biti bool, grane moraju biti kompatibilne (ovde oba int)
+            x = (niz1 == niz2) ? 1 : provera(niz1, Val.TRECI);
+
+            // 3. Testiranje logičkih izraza
+            uspeh = (x > 0) || (niz1.length != 5) && !false;
+            
+            if (uspeh) {
+                print('O'); print('K');
+            }
+
+            // 4. Testiranje restrikcija (otkomentariši jedno po jedno da proveriš greške)
+            // x = (true) ? 1 : 'c';         // GRESKA: int i char nisu kompatibilni
+            // if (niz1 > niz2) print('!');   // GRESKA: > nije za nizove
+            // break;                        // GRESKA: break van petlje/switcha
+        }
+    }

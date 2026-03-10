@@ -1,0 +1,45 @@
+program NivoA
+    int globalniNiz[];
+    int x;
+{
+    void main() 
+        int lokalna;
+        int i;
+    {
+        // 1. Testiranje konstanti i dodele (Nivo A)
+        x = 5;
+        lokalna = 10;
+        
+        // 2. Testiranje aritmetike i printa
+        // Očekivani ispis: 15
+        print(x + lokalna); 
+        print(eol);
+
+        // 3. Testiranje inkrementa i dekrementa
+        x++;        // x postaje 6
+        lokalna--;  // lokalna postaje 9
+        // Očekivani ispis: 15
+        print(x + lokalna);
+        print(eol);
+
+        // 4. Testiranje nizova (Alokacija i store)
+        globalniNiz = new int[3];
+        globalniNiz[0] = x;             // globalniNiz[0] = 6
+        globalniNiz[1] = lokalna * 2;   // globalniNiz[1] = 18
+        globalniNiz[2] = globalniNiz[0] + globalniNiz[1]; // 6 + 18 = 24
+        
+        // 5. Testiranje load-a iz niza i length-a
+        // Očekivani ispis: 24
+        print(globalniNiz[2]);
+        print(eol);
+        
+        // Očekivani ispis: 3
+        print(globalniNiz.length);
+        print(eol);
+
+        // 6. Testiranje read-a
+        // Unesi npr. 100 kad program zatraži
+        //read(x);
+        print(x);
+    }
+}

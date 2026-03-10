@@ -1,0 +1,9 @@
+//test simbolickih konstanti 
+program p1
+const int x = 0, y = 8;
+const char c1 = '5';
+const char c2 = 'r', c3 = 't';
+const bool b = true;
+{
+
+}

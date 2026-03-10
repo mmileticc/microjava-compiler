@@ -1,0 +1,11 @@
+//testiranje ConstDecl i VarDecl
+program MJProgram 
+const int broj == 0, br=9;
+const char karakter = 'r';
+int niz[], prome[nljiva, n[];
+const boolean s = true;
+char promKarakter;
+string str;
+{
+
+}

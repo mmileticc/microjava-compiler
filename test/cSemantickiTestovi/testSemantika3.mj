@@ -1,0 +1,10 @@
+//test enuma
+program p1
+
+enum DANI { pon, uto, cet = 4, pet}
+enum DANI2 { pon, uto, cet = 4, pet}
+
+
+{
+
+}

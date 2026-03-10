@@ -1,0 +1,31 @@
+//testiranje ClassDecl, MethodDecl
+program MJProgram 
+enum dani { pon , uto, cet = 4}
+int x, y, niz[];
+
+class Klasa {
+	int xx;
+	char slovo[];
+	{
+	
+	}
+}
+
+class Klasa2 extends Klasa{
+	
+	{
+		void funKlasa1(){
+			konj
+		}
+		void funUKlasi(int konjii, char karak){
+			konjine
+		}
+	}
+}
+
+{
+	void funUTelu(int konjii, char karak){
+			konjine
+	}
+
+}

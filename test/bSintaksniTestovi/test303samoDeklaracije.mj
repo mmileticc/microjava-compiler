@@ -1,0 +1,71 @@
+//Test 303 samo sa deklaracijama stvari
+
+program test_303
+
+const int cinilac = 4, delilac = 3;
+abstract class AbsPredmet
+{
+	{
+		abstract int zapremina();
+		abstract int Q();
+	}
+}
+class Predmet extends AbsPredmet
+{
+	 int tezina;
+	 char vrsta;
+
+	{
+		 void postaviTezinu(int tezina) {}  
+		 void ucitajTezinu() {  }
+		 int zapremina() { }
+		 int Q() {}
+		 void postaviVrstu(char vrsta) {}
+		 char dohvVrstu() {  }
+		 int dohvTezinu() {  }
+	}
+}
+
+class Sfera extends Predmet
+{
+	 int r;
+	{
+		 void postaviTezinu(int tezina) {}
+		 void postaviPoluprecnik(int r) {}
+		 int zapremina()
+			int z;
+		{
+		
+		}
+	}
+}
+
+class Kvadar extends Predmet
+{
+	 int a, b, c;
+	{
+		 void postaviTezinu(int tezina) {}
+		 void postaviStranice(int a, int b, int c) {}
+		 int zapremina()
+			int z;
+		{
+		
+		}
+	}
+}
+
+int zapreminaK, zapreminaS;
+int tezinaK, tezinaS;
+{
+
+	void ispis( Predmet p)
+	{
+		
+	}
+		
+	void main() Predmet predmeti[]; AbsPredmet absPredmeti[]; int i; Sfera s1, s2, s3; Kvadar k1, k2, k3; int t;
+	{	
+		
+	}
+}
+
